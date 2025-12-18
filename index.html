@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IQ Quiz Pro</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="questions.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h1>🧠 IQ Quiz Pro</h1>
+
+  <div id="setup">
+    <label>Difficulty:</label>
+<select id="difficulty">
+  <option value="easy">Easy</option>
+  <option value="medium">Medium</option>
+  <option value="hard">Hard</option>
+</select>
+    <button onclick="startQuiz()">Start Quiz</button>
+  </div>
+
+  <div id="quiz" class="hidden">
+    <div class="top-bar">
+      <span id="progress"></span>
+      <span id="timer"></span>
+    </div>
+
+    <div class="progress-bar">
+      <div id="progress-fill"></div>
+    </div>
+
+    <h2 id="question"></h2>
+    <div id="options"></div>
+  </div>
+
+  <div id="result" class="hidden">
+    <h2>Result</h2>
+    <p id="finalScore"></p>
+    <p id="iqLevel"></p>
+    <p id="bestScore"></p>
+    <button onclick="startQuiz()">🔁 Try Again</button>
+  </div>
+</div>
+
+</body>
+</html>
